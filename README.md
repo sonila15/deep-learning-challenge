@@ -13,7 +13,8 @@ Variables Removed: The "EIN" and "NAME" variables were removed from the input da
 In the second model, I reduced the number of rows in the file to address the crashing issue that occurred after some time. The target and feature variables were almost the same, except for adding the "NAME" column as a feature variable and dropping the "SPECIAL_CONSIDERATIONS" column.
 
 ### Compiling, Training, and Evaluating the Model
-Neurons, Layers, and Activation Functions: The neural network model consists of three hidden layers. The first hidden layer has 80 neurons, the second has 30 neurons, and the third has 10 neurons. The rectified linear unit (ReLU) is used as the activation function for all hidden layers. The output layer has a single neuron with a sigmoid activation function, predicting the binary classification of success or failure.
+
+### Neurons, Layers, and Activation Functions: The neural network model consists of three hidden layers. The first hidden layer has 80 neurons, the second has 30 neurons, and the third has 10 neurons. The rectified linear unit (ReLU) is used as the activation function for all hidden layers. The output layer has a single neuron with a sigmoid activation function, predicting the binary classification of success or failure.
 Target Model Performance: The target model performance is to achieve an accuracy of at least 75% on the test dataset.
 - In the first model, the accuracy and loss results were:
 
@@ -46,3 +47,6 @@ Ensemble techniques, such as bagging or boosting, could be explored to combine m
 
 ### Summary
 The deep learning model developed using a neural network shows promising results in predicting the success of funding ventures for Alphabet Soup. By utilizing various features and applying data preprocessing techniques, the model achieves a satisfactory level of accuracy. However, there is still room for improvement.
+
+### Recommendation:
+For this classification problem, an alternative model that could be considered is the Random Forest Classifier. Random Forest is an ensemble learning method that combines multiple decision trees to make predictions. It can handle categorical variables without the need for one-hot encoding and can handle high-dimensional data well. Additionally, Random Forest can provide feature importances, which can help in understanding the significance of each feature in the prediction task.
